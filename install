@@ -1,11 +1,10 @@
 #!/bin/bash
-#
-# Original script by ahsnet 
-# untuk debian 10
-# 
-# ==================================================
-
+# AHSNET
+# initialisasi var
+export DEBIAN_FRONTEND=noninteractive
+OS=`uname -m`;
 MYIP=$(wget -qO- ipv4.icanhazip.com);
+MYIP2="s/xxxxxxxxx/$MYIP/g";
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
